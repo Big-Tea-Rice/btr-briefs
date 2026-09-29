@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light dark"><title>Market brief 30 Sep 07:42</title><style>
+:root{--paper:#f4f6f5;--surface:#fff;--ink:#17222c;--muted:#5b6872;--rule:#d8dfdd;--accent:#a86400;
+ --accent-soft:#fbf0de;--up:#1d7a4a;--down:#b3362c;--chip:#e8eeec;
+ --mono:ui-monospace,Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+@media (prefers-color-scheme: dark){:root{color-scheme:dark;--paper:#0e1418;--surface:#151d23;--ink:#e3eaee;
+ --muted:#9aa8b1;--rule:#26323a;--accent:#e3a44a;--accent-soft:#2a2112;--up:#4cc38a;--down:#ef6b5e;--chip:#1c262d;}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 var(--sans)}
+.wrap{max-width:780px;margin:0 auto;padding:max(14px,env(safe-area-inset-top)) 16px 48px;display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}
+.wrap>*,section>*{min-width:0}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:15px}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+header{display:grid;gap:4px;border-bottom:2px solid var(--ink);padding-bottom:12px}
+.kicker{font:700 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:26px;line-height:1.2;margin:0}
+.meta{color:var(--muted);font-size:14px}
+nav.sec{display:flex;gap:8px;overflow-x:auto;padding:6px 0 4px;position:sticky;top:0;background:var(--paper);z-index:2}
+nav.sec a{flex:none;font:600 13px/1 var(--sans);text-transform:uppercase;color:var(--ink);text-decoration:none;
+ background:var(--chip);padding:9px 12px;border-radius:999px}
+section{display:grid;gap:10px;scroll-margin-top:56px}
+h2{font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin:8px 0 0;color:var(--muted);
+ border-bottom:1px solid var(--rule);padding-bottom:6px}
+h3{font-size:17px;margin:6px 0 0} h4{font-size:15px;margin:4px 0 0}
+p,ul,ol{margin:0} ul,ol{padding-left:22px;display:grid;gap:5px}
+.keys{background:var(--accent-soft);border-left:4px solid var(--accent);padding:12px 14px;display:grid;gap:8px;font-size:18px}
+.keys p{margin:0}
+.alerts{background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px;display:grid;gap:6px}
+.alerts p{margin:0}
+ul.lines{list-style:none;padding:0}
+ul.lines li{padding-left:12px;position:relative}
+ul.lines li::before{content:"";position:absolute;left:0;top:.65em;width:5px;height:5px;border-radius:50%;background:var(--muted)}
+.hi{color:var(--accent);font-weight:700}
+.flag{font-size:12px;font-weight:700;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:1px 5px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0}
+.kv dt{font-weight:700;font-size:13px;text-transform:uppercase;color:var(--muted)} .kv dd{margin:0}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font:14px/1.4 var(--mono);font-variant-numeric:tabular-nums}
+th{font:700 12px/1.2 var(--sans);text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 8px;white-space:nowrap}
+td{padding:6px 8px;border-top:1px solid var(--rule);vertical-align:top}
+th.r,td.r{text-align:right}
+td.up{color:var(--up)} td.down{color:var(--down)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.grid td+td,.grid th+th{text-align:right}
+pre{font:13.5px/1.45 var(--mono);background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:12px;margin:0;overflow-x:auto}
+code{font:14px var(--mono);background:var(--chip);padding:1px 4px;border-radius:3px}
+blockquote{margin:0;padding:8px 12px;border-left:3px solid var(--rule);color:var(--muted)}
+hr{border:0;border-top:1px solid var(--rule);width:100%}
+a{color:var(--accent)}
+.cards{display:grid;gap:12px}
+.card{display:block;background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;
+ color:var(--ink);text-decoration:none}
+.card .kicker{margin-bottom:6px}
+.card b{display:block;font-size:19px;line-height:1.3}
+.card span{display:block;color:var(--muted);font-size:15px;margin-top:4px}
+.day{font-weight:700;margin-top:6px}
+.row{display:flex;gap:10px;padding:10px 0;border-top:1px solid var(--rule);color:var(--ink);text-decoration:none}
+.row .t{flex:none;font:600 15px var(--mono);color:var(--muted);width:3.4em}
+.row .k{flex:none;font-size:12px;font-weight:700;text-transform:uppercase;color:var(--accent);width:6.5em;padding-top:3px}
+.row .h{flex:1;min-width:0}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--rule);padding-top:10px}
+@page{size:130mm 240mm;margin:7mm 6mm}
+@media print{
+ :root{color-scheme:light;--paper:#fff;--surface:#fff;--ink:#111;--muted:#555;--rule:#ccc;--accent:#8a5200;--accent-soft:#fbf0de;--chip:#eee;--up:#1d7a4a;--down:#b3362c}
+ body{font-size:10.5pt;line-height:1.4}
+ .wrap{max-width:none;padding:0;gap:12px}
+ .top,nav.sec{display:none}
+ h1{font-size:17pt} .keys{font-size:11pt}
+ .scroll{overflow:visible}
+ table{font-size:7.5pt} th{font-size:6.5pt;white-space:normal;padding:2px 3px} td{padding:2px 3px}
+ pre{white-space:pre-wrap;word-break:break-word;font-size:7.5pt;overflow:visible}
+ .grid{grid-template-columns:1fr}
+ a{color:inherit;text-decoration:none}
+ tr,.keys,.card,h2,h3{break-inside:avoid-page} h2,h3{break-after:avoid-page}
+}
+</style></head><body><div class="wrap"><div class="top"><a href="../index.html">&larr; All items</a><span>Market brief</span></div><header><div class="kicker">Market brief</div><h1>Market brief 30 Sep 07:42</h1><div class="meta">Wed 30 Sep 2026 - 07:42 HKT</div></header><div class="keys"><p>(!) HKD 7.8462 - 38 pips to 7.8500 weak side</p><p>(!) COT lev funds adding S&amp;P/NQ shorts (22 Sep data)</p><p>UST 30Y hit 5.61%, highest since 2002; Brent -1.7% to 96</p><p>Today 20:30 HKT US Core PCE + GDP; MU earnings after NY close</p></div><nav class="sec" aria-label="Sections"><a href="#markets">Markets</a><a href="#trump">Trump</a><a href="#calendar">Calendar</a><a href="#headlines">Headlines</a><a href="#positioning-risk">Positioning &amp; Risk</a><a href="#reversal-signals">Reversal Signals</a><a href="#fvg">Fvg</a></nav><section id="markets"><h2>MARKETS</h2><div class="grid"><div><h3>INDICES</h3><div class="scroll"><table><thead><tr><th>Symbol</th><th class="r">Last</th><th class="r">Chg</th><th class="r">%</th></tr></thead><tbody><tr><td>NK</td><td class="r">66,340.00</td><td class="r up">+565.00</td><td class="r up">+0.86%</td></tr><tr><td>KOSPI200</td><td class="r">1,106.55</td><td class="r up">+10.45</td><td class="r up">+0.95%</td></tr><tr><td>HSI</td><td class="r">24,364.00</td><td class="r down">-85.00</td><td class="r down">-0.35%</td></tr><tr><td>YM</td><td class="r">51,784.00</td><td class="r up">+82.00</td><td class="r up">+0.16%</td></tr><tr><td>NQ</td><td class="r">30,675.00</td><td class="r up">+61.75</td><td class="r up">+0.20%</td></tr><tr><td>ES</td><td class="r">7,744.00</td><td class="r up">+12.00</td><td class="r up">+0.16%</td></tr></tbody></table></div></div><div><h3>COMMODITIES</h3><div class="scroll"><table><thead><tr><th>Symbol</th><th class="r">Last</th><th class="r">Chg</th><th class="r">%</th></tr></thead><tbody><tr><td>GC</td><td class="r">4,211.00</td><td class="r up">+31.30</td><td class="r up">+0.75%</td></tr><tr><td>SI</td><td class="r">61.84</td><td class="r up">+0.68</td><td class="r up">+1.12%</td></tr><tr><td>CL</td><td class="r">89.15</td><td class="r down">-0.23</td><td class="r down">-0.26%</td></tr><tr><td>BZ</td><td class="r">96.16</td><td class="r down">-1.67</td><td class="r down">-1.71%</td></tr></tbody></table></div></div><div><h3>RATES (UST, yield %)</h3><div class="scroll"><table><thead><tr><th>Symbol</th><th class="r">Last</th><th class="r">Chg</th><th class="r">%</th></tr></thead><tbody><tr><td>2Y</td><td class="r">4.88</td><td class="r down">-0.05</td><td class="r down">-1.05%</td></tr><tr><td>5Y</td><td class="r">5.05</td><td class="r down">-0.02</td><td class="r down">-0.47%</td></tr><tr><td>10Y</td><td class="r">5.23</td><td class="r down">-0.00</td><td class="r down">-0.04%</td></tr><tr><td>30Y</td><td class="r">5.57</td><td class="r up">+0.02</td><td class="r up">+0.29%</td></tr></tbody></table></div></div><div><h3>FX (G7)</h3><div class="scroll"><table><thead><tr><th>Symbol</th><th class="r">Last</th><th class="r">Chg</th><th class="r">%</th></tr></thead><tbody><tr><td>EURUSD</td><td class="r">1.1340</td><td class="r down">-0.0001</td><td class="r down">-0.01%</td></tr><tr><td>GBPUSD</td><td class="r">1.3229</td><td class="r down">-0.0003</td><td class="r down">-0.02%</td></tr><tr><td>USDJPY</td><td class="r">157.4040</td><td class="r up">+0.1180</td><td class="r up">+0.08%</td></tr><tr><td>USDCAD</td><td class="r">1.4191</td><td class="r up">+0.0001</td><td class="r up">+0.01%</td></tr></tbody></table></div></div><div><h3>CRYPTO</h3><div class="scroll"><table><thead><tr><th>Symbol</th><th class="r">Last</th><th class="r">Chg</th><th class="r">%</th></tr></thead><tbody><tr><td>BTC</td><td class="r">83,623.74</td><td class="r up">+167.00</td><td class="r up">+0.20%</td></tr><tr><td>ETH</td><td class="r">2,675.74</td><td class="r down">-11.67</td><td class="r down">-0.43%</td></tr><tr><td>SOL</td><td class="r">118.85</td><td class="r up">+0.04</td><td class="r up">+0.03%</td></tr><tr><td>XRP</td><td class="r">1.4882</td><td class="r down">-0.0079</td><td class="r down">-0.53%</td></tr></tbody></table></div></div></div></section><section id="trump"><h2>TRUMP (last 24h)</h2><ul class="lines"><li>Reposted &quot;US military won the Battle of Hormuz, Iran doesn&#x27;t control the Strait&quot; (Dubowitz) - talks down oil risk premium (Truth Social, 29 Sep)</li></ul></section><section id="calendar"><h2>CALENDAR</h2><ul class="lines"><li>Times HKT (exchange-local). <span class="hi">(!)</span>CPI = CPI release.</li><li>CPI today: DE CPI 20:00 HKT (14:00 FRA) (study lift is US CPI)</li><li>US earnings season: off, starts Sat 10 Oct - reversal caution from then</li><li>ECONOMIC DATA - 3-star [investing.com]</li><li>TODAY WED 30 SEP</li><li>09:30 HKT CN Mfg PMI (Sep)</li><li>  f 50.1 | p 49.8</li><li>14:00 HKT (07:00 LDN) UK GDP q/q, y/y (Q2)</li><li>  f 0.4%, 1.2% | p 0.6%, 0.9%</li><li>20:00 HKT (14:00 FRA) DE CPI m/m (Sep) <span class="hi">(!)</span>CPI</li><li>  f 0.5% | p 0.2%</li><li>20:15 HKT (08:15 NY) US ADP Nonfarm employment (Sep)</li><li>  f 73K | p 38K</li><li>20:30 HKT (08:30 NY) US Core PCE y/y, m/m (Aug)</li><li>  f 3.4%, 0.3% | p 3.3%, 0.2%</li><li>20:30 HKT (08:30 NY) US GDP q/q (Q2)</li><li>  f 1.5% | p 2.1%</li><li>21:45 HKT (09:45 NY) US Chicago PMI (Sep)</li><li>  f 51.2 | p 47.1</li><li>22:30 HKT (10:30 NY) US EIA crude stocks</li><li>  p 2.969M</li><li>THU 01 OCT</li><li>  Holiday: CN, HK (National Day)</li><li>20:30 HKT (08:30 NY) US Jobless claims</li><li>  f 199K | p 197K</li><li>21:45 HKT (09:45 NY) US S&amp;P Global Mfg PMI (Sep)</li><li>  f 57.0 | p 57.0</li><li>22:00 HKT (10:00 NY) US ISM Mfg PMI (Sep)</li><li>  f 55.0 | p 54.6</li><li>22:00 HKT (10:00 NY) US ISM Mfg Prices (Sep)</li><li>  f 72.0 | p 71.1</li><li>FRI 02 OCT</li><li>  Holiday: CN (National Day)</li><li>17:00 HKT (11:00 FRA) EZ CPI y/y (Sep) <span class="hi">(!)</span>CPI</li><li>  f 3.7% | p 3.2%</li><li>20:30 HKT (08:30 NY) US Avg hourly earnings m/m (Sep)</li><li>  f 0.3% | p 0.3%</li><li>20:30 HKT (08:30 NY) US Nonfarm payrolls (Sep)</li><li>  f 98K | p 162K</li><li>20:30 HKT (08:30 NY) US Unemployment Rate (Sep)</li><li>  f 4.1% | p 4.1%</li><li>TOP-50 EARNINGS 30 Sep-04 Oct [investing.com]</li><li>TODAY Micron Technology (MU) post-close NY (&gt;04:00 HKT Thu)*</li><li>  EPS f 31.16 | rev f 50.45B</li><li>  * time from Nasdaq (investing.com gives none)</li></ul></section><section id="headlines"><h2>HEADLINES</h2><ul class="lines"><li>UST 30Y touched 5.61%, highest since 2002 - oil, inflation, supply (CNBC/Bloomberg)</li><li>S&amp;P 500 -0.16% to 7,670.84, second straight loss on yields (TheStreet)</li><li>NY Fed Williams: Fed could wait until December before next hike (TheStreet/Yahoo)</li><li>Hormuz traffic near prewar, ~10M bpd per Kpler (Washington Times)</li><li>US/China tariff-cut lists out: $30bn each, US soybeans excluded (CNBC/AP)</li><li>Bank Indonesia intervening, rupiah weakest since 4 Aug (Rio Times)</li></ul></section><section id="positioning-risk"><h2>POSITIONING &amp; RISK</h2><dl class="kv"><dt></dt><dd>ALERTS: <span class="hi">(!)</span> COT [B] S&amp;P 500 lev funds adding shorts (-63,785, now -375,616) - flip from covering | <span class="hi">(!)</span> COT [B] Nasdaq lev funds adding shorts (-24,296) - flip | <span class="hi">(!)</span> HKD 7.8462, 38 pips to 7.8500</dd><dt>COT</dt><dd>unchanged (as of 2026-09-22)</dd><dt>HKD</dt><dd>7.8462 - 38 pips to 7.8500 | agg bal n/a (HKMA API timeout x2) | HIBOR-US n/a - carry-drift</dd><dt>CREDIT</dt><dd>HY 3.02% (+42bp/1m, 50th pct) / IG 0.83% - no stress</dd><dt>CHINA</dt><dd>southbound +15 HK$M on 29 Sep (flat); Connect closed 01-02 Oct</dd><dt>GEO</dt><dd>ME: Hormuz flows near prewar (Kpler); ship hit by unknown projectile in Hormuz 29 Sep <span class="flag">flag</span>; IRGC says it keeps leverage; Iran UN delegation no US meeting this week</dd><dt>GEO</dt><dd>SCS: no material change since PH resupply block (27 Sep); Taiwan-PH ties deepening</dd><dt>GEO</dt><dd>EM: IDR weakest since 4 Aug, BI intervening; Pakistan march moved to 4 Oct</dd><dt>QUAKES</dt><dd>M6.6 New Caledonia 25 Sep; no M7+/tsunami in 48h</dd><dt></dt><dd>SHEK COLUMN - no new column today.</dd></dl></section><section id="reversal-signals"><h2>REVERSAL SIGNALS</h2><ul class="lines"><li>Reversal signals: none on the latest closes</li></ul></section><section id="fvg"><h2>FVG (unfilled, nearest to price)</h2><pre>[via TradingView]
+FVG - unfilled, nearest to price   (supp = support below, res = resistance above)
+
+INDICES
+  NK  66,340.00
+    D   supp 65,355.00-65,385.00 (Sep 21)
+        res  66,890.00-67,390.00 (Aug 19)
+    1H  supp 66,135.00-66,210.00 (Sep 30)
+        res  66,715.00-66,875.00 (Sep 23)
+  KOSPI200  1,106.55
+    D   supp 1,075.40-1,075.50 (Sep 18)
+        res  1,124.10-1,194.05 (Jul 13)
+    1H  supp 1,102.30-1,106.05 (Sep 30)
+        res  1,111.60-1,127.75 (Sep 28)
+  HSI  24,364.00
+    D   supp 23,808.00-23,883.00 (Jul 08)
+        res  24,763.00-24,802.00 (Sep 24)
+    1H  supp -
+        res  24,432.00-24,480.00 (Sep 29)
+  YM  51,784.00
+    D   supp 51,017.00-51,743.00 (Jun 15)
+        res  52,676.00-52,758.00 (Sep 10)
+    1H  supp 51,766.00-51,771.00 (Sep 29)
+        res  52,005.00-52,160.00 (Sep 27)
+  NQ  30,675.00
+    D   supp 29,993.25-30,670.00 (Sep 22)
+        res  -
+    1H  supp 30,584.75-30,592.25 (Sep 29)
+        res  30,704.00-30,741.50 (Sep 27)
+  ES  7,744.00
+    D   supp 7,541.00-7,629.00 (Aug 04)
+        res  7,783.50-7,810.50 (Sep 24)
+    1H  supp 7,741.25-7,741.75 (Sep 29)
+        res  7,747.00-7,751.75 (Sep 29)
+
+COMMODITIES
+  GC  4,211.00
+    D   supp 3,916.80-3,963.40 (Oct 07 2025)
+        res  4,218.10-4,289.20 (Sep 29)
+    1H  supp 4,181.20-4,200.40 (Sep 29)
+        res  4,213.80-4,226.80 (Sep 28)
+  SI  61.84
+    D   supp 60.28-61.12 (Aug 06)
+        res  61.91-63.78 (Sep 29)
+    1H  supp 61.21-61.65 (Sep 29)
+        res  62.17-62.32 (Sep 28)
+  CL  89.15
+    D   supp 86.79-88.97 (Sep 02)
+        res  89.57-91.25 (Sep 30)
+    1H  supp -
+        res  89.45-90.01 (Sep 29)
+  BZ  96.16
+    D   supp 91.52-93.52 (Sep 02)
+        res  -
+    1H  supp -
+        res  96.18-96.55 (Sep 29)
+
+RATES (UST, yield %)
+  2Y  4.88
+    D   supp 4.79-4.84 (Sep 24)
+        res  -
+    1H  supp 4.80-4.85 (Sep 23)
+        res  4.89-4.93 (Sep 29)
+  5Y  5.05
+    D   supp 4.86-4.96 (Sep 24)
+        res  -
+    1H  supp 5.00-5.03 (Sep 27)
+        res  5.05-5.06 (Sep 29)
+  10Y  5.23
+    D   supp 5.13-5.15 (Sep 25)
+        res  -
+    1H  supp 5.22-5.23 (Sep 29)
+        res  5.26-5.28 (Sep 29)
+  30Y  5.57
+    D   supp 5.41-5.45 (Sep 25)
+        res  -
+    1H  supp 5.54-5.55 (Sep 29)
+        res  5.57-5.58 (Sep 29)
+
+FX (G7)
+  EURUSD  1.1340
+    D   supp -
+        res  1.1346-1.1353 (Sep 30)
+    1H  supp 1.1320-1.1336 (Sep 29)
+        res  1.1352-1.1357 (Sep 29)
+  GBPUSD  1.3229
+    D   supp 1.3118-1.3124 (Nov 26 2025)
+        res  1.3256-1.3322 (Sep 24)
+    1H  supp 1.3212-1.3225 (Sep 29)
+        res  1.3243-1.3248 (Sep 29)
+  USDJPY  157.4040
+    D   supp 156.3140-156.5750 (Sep 21)
+        res  158.9680-159.6340 (Sep 03)
+    1H  supp 156.3200-156.5520 (Sep 17)
+        res  158.0700-158.0890 (Sep 25)
+  USDCAD  1.4191
+    D   supp 1.4178-1.4185 (Sep 30)
+        res  -
+    1H  supp 1.4175-1.4176 (Sep 28)
+        res  -
+
+CRYPTO
+  BTC  83,623.74
+    D   supp 77,105.42-80,822.48 (Sep 19)
+        res  84,599.00-88,706.32 (Jan 30)
+    1H  supp 83,200.00-83,370.01 (Sep 29)
+        res  83,727.86-83,987.12 (Sep 29)
+  ETH  2,675.74
+    D   supp 2,481.48-2,601.84 (Sep 19)
+        res  2,706.26-2,715.02 (Sep 24)
+    1H  supp 2,672.11-2,674.83 (Sep 29)
+        res  2,683.87-2,707.31 (Sep 29)
+  SOL  118.85
+    D   supp 111.43-115.54 (Sep 22)
+        res  118.94-124.59 (Jan 30)
+    1H  supp 118.33-118.53 (Sep 29)
+        res  120.26-120.64 (Sep 29)
+  XRP  1.4882
+    D   supp 1.3193-1.3926 (Sep 19)
+        res  1.6786-1.7087 (Feb 01)
+    1H  supp 1.4449-1.4694 (Sep 21)
+        res  1.4899-1.5074 (Sep 29)</pre></section><footer>Analytical only - probabilities and data, not advice. You place every trade.  Item 20260930-0742-brief.</footer></div></body></html>
