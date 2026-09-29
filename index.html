@@ -1,1 +1,77 @@
-<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title>BTR Market Briefs</title><p>Starting...</p>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light dark"><title>BTR Market Briefs</title><style>
+:root{--paper:#f4f6f5;--surface:#fff;--ink:#17222c;--muted:#5b6872;--rule:#d8dfdd;--accent:#a86400;
+ --accent-soft:#fbf0de;--up:#1d7a4a;--down:#b3362c;--chip:#e8eeec;
+ --mono:ui-monospace,Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+@media (prefers-color-scheme: dark){:root{color-scheme:dark;--paper:#0e1418;--surface:#151d23;--ink:#e3eaee;
+ --muted:#9aa8b1;--rule:#26323a;--accent:#e3a44a;--accent-soft:#2a2112;--up:#4cc38a;--down:#ef6b5e;--chip:#1c262d;}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 var(--sans)}
+.wrap{max-width:780px;margin:0 auto;padding:max(14px,env(safe-area-inset-top)) 16px 48px;display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}
+.wrap>*,section>*{min-width:0}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:15px}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+header{display:grid;gap:4px;border-bottom:2px solid var(--ink);padding-bottom:12px}
+.kicker{font:700 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:26px;line-height:1.2;margin:0}
+.meta{color:var(--muted);font-size:14px}
+nav.sec{display:flex;gap:8px;overflow-x:auto;padding:6px 0 4px;position:sticky;top:0;background:var(--paper);z-index:2}
+nav.sec a{flex:none;font:600 13px/1 var(--sans);text-transform:uppercase;color:var(--ink);text-decoration:none;
+ background:var(--chip);padding:9px 12px;border-radius:999px}
+section{display:grid;gap:10px;scroll-margin-top:56px}
+h2{font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin:8px 0 0;color:var(--muted);
+ border-bottom:1px solid var(--rule);padding-bottom:6px}
+h3{font-size:17px;margin:6px 0 0} h4{font-size:15px;margin:4px 0 0}
+p,ul,ol{margin:0} ul,ol{padding-left:22px;display:grid;gap:5px}
+.keys{background:var(--accent-soft);border-left:4px solid var(--accent);padding:12px 14px;display:grid;gap:8px;font-size:18px}
+.keys p{margin:0}
+.alerts{background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px;display:grid;gap:6px}
+.alerts p{margin:0}
+ul.lines{list-style:none;padding:0}
+ul.lines li{padding-left:12px;position:relative}
+ul.lines li::before{content:"";position:absolute;left:0;top:.65em;width:5px;height:5px;border-radius:50%;background:var(--muted)}
+.hi{color:var(--accent);font-weight:700}
+.flag{font-size:12px;font-weight:700;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:1px 5px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0}
+.kv dt{font-weight:700;font-size:13px;text-transform:uppercase;color:var(--muted)} .kv dd{margin:0}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font:14px/1.4 var(--mono);font-variant-numeric:tabular-nums}
+th{font:700 12px/1.2 var(--sans);text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 8px;white-space:nowrap}
+td{padding:6px 8px;border-top:1px solid var(--rule);vertical-align:top}
+th.r,td.r{text-align:right}
+td.up{color:var(--up)} td.down{color:var(--down)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.grid td+td,.grid th+th{text-align:right}
+pre{font:13.5px/1.45 var(--mono);background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:12px;margin:0;overflow-x:auto}
+code{font:14px var(--mono);background:var(--chip);padding:1px 4px;border-radius:3px}
+blockquote{margin:0;padding:8px 12px;border-left:3px solid var(--rule);color:var(--muted)}
+hr{border:0;border-top:1px solid var(--rule);width:100%}
+a{color:var(--accent)}
+.cards{display:grid;gap:12px}
+.card{display:block;background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;
+ color:var(--ink);text-decoration:none}
+.card .kicker{margin-bottom:6px}
+.card b{display:block;font-size:19px;line-height:1.3}
+.card span{display:block;color:var(--muted);font-size:15px;margin-top:4px}
+.day{font-weight:700;margin-top:6px}
+.row{display:flex;gap:10px;padding:10px 0;border-top:1px solid var(--rule);color:var(--ink);text-decoration:none}
+.row .t{flex:none;font:600 15px var(--mono);color:var(--muted);width:3.4em}
+.row .k{flex:none;font-size:12px;font-weight:700;text-transform:uppercase;color:var(--accent);width:6.5em;padding-top:3px}
+.row .h{flex:1;min-width:0}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--rule);padding-top:10px}
+@page{size:130mm 240mm;margin:7mm 6mm}
+@media print{
+ :root{color-scheme:light;--paper:#fff;--surface:#fff;--ink:#111;--muted:#555;--rule:#ccc;--accent:#8a5200;--accent-soft:#fbf0de;--chip:#eee;--up:#1d7a4a;--down:#b3362c}
+ body{font-size:10.5pt;line-height:1.4}
+ .wrap{max-width:none;padding:0;gap:12px}
+ .top,nav.sec{display:none}
+ h1{font-size:17pt} .keys{font-size:11pt}
+ .scroll{overflow:visible}
+ table{font-size:7.5pt} th{font-size:6.5pt;white-space:normal;padding:2px 3px} td{padding:2px 3px}
+ pre{white-space:pre-wrap;word-break:break-word;font-size:7.5pt;overflow:visible}
+ .grid{grid-template-columns:1fr}
+ a{color:inherit;text-decoration:none}
+ tr,.keys,.card,h2,h3{break-inside:avoid-page} h2,h3{break-after:avoid-page}
+}
+</style></head><body><div class="wrap"><header><div class="kicker">Market briefs</div><h1>BTR Market Briefs</h1><div class="meta">Updated Tue 29 Sep 15:54 HKT</div></header><section><h2>Market briefs</h2><div><div class="day">Tue 29 Sep 2026</div><a class="row" href="b/20260929-1409-brief.html"><span class="t">14:09</span><span class="h">(!) 22:00 HKT US JOLTS + Conf Board confidence; Fed speakers all session</span></a></div></section><footer>Analytical only - probabilities and data, not advice. You place every trade.</footer></div></body></html>

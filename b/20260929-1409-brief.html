@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light dark"><title>Market brief 29 Sep 14:09</title><style>
+:root{--paper:#f4f6f5;--surface:#fff;--ink:#17222c;--muted:#5b6872;--rule:#d8dfdd;--accent:#a86400;
+ --accent-soft:#fbf0de;--up:#1d7a4a;--down:#b3362c;--chip:#e8eeec;
+ --mono:ui-monospace,Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+@media (prefers-color-scheme: dark){:root{color-scheme:dark;--paper:#0e1418;--surface:#151d23;--ink:#e3eaee;
+ --muted:#9aa8b1;--rule:#26323a;--accent:#e3a44a;--accent-soft:#2a2112;--up:#4cc38a;--down:#ef6b5e;--chip:#1c262d;}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 var(--sans)}
+.wrap{max-width:780px;margin:0 auto;padding:max(14px,env(safe-area-inset-top)) 16px 48px;display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}
+.wrap>*,section>*{min-width:0}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:15px}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+header{display:grid;gap:4px;border-bottom:2px solid var(--ink);padding-bottom:12px}
+.kicker{font:700 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:26px;line-height:1.2;margin:0}
+.meta{color:var(--muted);font-size:14px}
+nav.sec{display:flex;gap:8px;overflow-x:auto;padding:6px 0 4px;position:sticky;top:0;background:var(--paper);z-index:2}
+nav.sec a{flex:none;font:600 13px/1 var(--sans);text-transform:uppercase;color:var(--ink);text-decoration:none;
+ background:var(--chip);padding:9px 12px;border-radius:999px}
+section{display:grid;gap:10px;scroll-margin-top:56px}
+h2{font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin:8px 0 0;color:var(--muted);
+ border-bottom:1px solid var(--rule);padding-bottom:6px}
+h3{font-size:17px;margin:6px 0 0} h4{font-size:15px;margin:4px 0 0}
+p,ul,ol{margin:0} ul,ol{padding-left:22px;display:grid;gap:5px}
+.keys{background:var(--accent-soft);border-left:4px solid var(--accent);padding:12px 14px;display:grid;gap:8px;font-size:18px}
+.keys p{margin:0}
+.alerts{background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px;display:grid;gap:6px}
+.alerts p{margin:0}
+ul.lines{list-style:none;padding:0}
+ul.lines li{padding-left:12px;position:relative}
+ul.lines li::before{content:"";position:absolute;left:0;top:.65em;width:5px;height:5px;border-radius:50%;background:var(--muted)}
+.hi{color:var(--accent);font-weight:700}
+.flag{font-size:12px;font-weight:700;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:1px 5px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0}
+.kv dt{font-weight:700;font-size:13px;text-transform:uppercase;color:var(--muted)} .kv dd{margin:0}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font:14px/1.4 var(--mono);font-variant-numeric:tabular-nums}
+th{font:700 12px/1.2 var(--sans);text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 8px;white-space:nowrap}
+td{padding:6px 8px;border-top:1px solid var(--rule);vertical-align:top}
+th.r,td.r{text-align:right}
+td.up{color:var(--up)} td.down{color:var(--down)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.grid td+td,.grid th+th{text-align:right}
+pre{font:13.5px/1.45 var(--mono);background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:12px;margin:0;overflow-x:auto}
+code{font:14px var(--mono);background:var(--chip);padding:1px 4px;border-radius:3px}
+blockquote{margin:0;padding:8px 12px;border-left:3px solid var(--rule);color:var(--muted)}
+hr{border:0;border-top:1px solid var(--rule);width:100%}
+a{color:var(--accent)}
+.cards{display:grid;gap:12px}
+.card{display:block;background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;
+ color:var(--ink);text-decoration:none}
+.card .kicker{margin-bottom:6px}
+.card b{display:block;font-size:19px;line-height:1.3}
+.card span{display:block;color:var(--muted);font-size:15px;margin-top:4px}
+.day{font-weight:700;margin-top:6px}
+.row{display:flex;gap:10px;padding:10px 0;border-top:1px solid var(--rule);color:var(--ink);text-decoration:none}
+.row .t{flex:none;font:600 15px var(--mono);color:var(--muted);width:3.4em}
+.row .k{flex:none;font-size:12px;font-weight:700;text-transform:uppercase;color:var(--accent);width:6.5em;padding-top:3px}
+.row .h{flex:1;min-width:0}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--rule);padding-top:10px}
+@page{size:130mm 240mm;margin:7mm 6mm}
+@media print{
+ :root{color-scheme:light;--paper:#fff;--surface:#fff;--ink:#111;--muted:#555;--rule:#ccc;--accent:#8a5200;--accent-soft:#fbf0de;--chip:#eee;--up:#1d7a4a;--down:#b3362c}
+ body{font-size:10.5pt;line-height:1.4}
+ .wrap{max-width:none;padding:0;gap:12px}
+ .top,nav.sec{display:none}
+ h1{font-size:17pt} .keys{font-size:11pt}
+ .scroll{overflow:visible}
+ table{font-size:7.5pt} th{font-size:6.5pt;white-space:normal;padding:2px 3px} td{padding:2px 3px}
+ pre{white-space:pre-wrap;word-break:break-word;font-size:7.5pt;overflow:visible}
+ .grid{grid-template-columns:1fr}
+ a{color:inherit;text-decoration:none}
+ tr,.keys,.card,h2,h3{break-inside:avoid-page} h2,h3{break-after:avoid-page}
+}
+</style></head><body><div class="wrap"><div class="top"><a href="../index.html">&larr; All briefs</a><span>Market brief</span></div><header><div class="kicker">Market brief</div><h1>Market brief 29 Sep 14:09</h1><div class="meta">Tue 29 Sep 2026 - 14:09 HKT</div></header><div class="keys"><p>(!) 22:00 HKT US JOLTS + Conf Board confidence; Fed speakers all session</p><p>Asia red: HSI -1.10%, NK -0.84%; oil bid, BZ +1.89%, CL +1.63%</p><p>Trump stands by rejecting Iran truce - Hormuz shut, war premium in oil</p><p>UST 10Y 5.23% after 19-year high 5.27% on hike bets</p></div><nav class="sec" aria-label="Sections"><a href="#markets">Markets</a><a href="#trump">Trump</a><a href="#today-s-catalysts">Today&#x27;S Catalysts</a><a href="#headlines">Headlines</a><a href="#fvg">Fvg</a></nav><section id="markets"><h2>MARKETS</h2><div class="grid"><div><h3>INDICES</h3><div class="scroll"><table><thead><tr><th>Symbol</th><th class="r">Last</th><th class="r">Chg</th><th class="r">%</th></tr></thead><tbody><tr><td>ES</td><td class="r">7,728.25</td><td class="r down">-18.50</td><td class="r down">-0.24%</td></tr><tr><td>NQ</td><td class="r">30,429.00</td><td class="r down">-137.25</td><td class="r down">-0.45%</td></tr><tr><td>YM</td><td class="r">51,746.00</td><td class="r down">-91.00</td><td class="r down">-0.18%</td></tr><tr><td>HSI</td><td class="r">24,444.00</td><td class="r down">-272.00</td><td class="r down">-1.10%</td></tr><tr><td>NK</td><td class="r">65,180.00</td><td class="r down">-550.00</td><td class="r down">-0.84%</td></tr><tr><td>KOSPI200</td><td class="r">1,083.55</td><td class="r down">-5.35</td><td class="r down">-0.49%</td></tr></tbody></table></div></div><div><h3>COMMODITIES</h3><div class="scroll"><table><thead><tr><th>Symbol</th><th class="r">Last</th><th class="r">Chg</th><th class="r">%</th></tr></thead><tbody><tr><td>GC</td><td class="r">4,170.80</td><td class="r up">+2.40</td><td class="r up">+0.06%</td></tr><tr><td>SI</td><td class="r">61.07</td><td class="r down">-0.65</td><td class="r down">-1.05%</td></tr><tr><td>CL</td><td class="r">94.11</td><td class="r up">+1.51</td><td class="r up">+1.63%</td></tr><tr><td>BZ</td><td class="r">99.68</td><td class="r up">+1.85</td><td class="r up">+1.89%</td></tr></tbody></table></div></div><div><h3>RATES (UST, yield %)</h3><div class="scroll"><table><thead><tr><th>Symbol</th><th class="r">Last</th><th class="r">Chg</th><th class="r">%</th></tr></thead><tbody><tr><td>2Y</td><td class="r">4.93</td><td class="r up">+0.00</td><td class="r up">+0.08%</td></tr><tr><td>5Y</td><td class="r">5.07</td><td class="r ">+0.00</td><td class="r ">+0.00%</td></tr><tr><td>10Y</td><td class="r">5.23</td><td class="r down">-0.00</td><td class="r down">-0.04%</td></tr><tr><td>30Y</td><td class="r">5.55</td><td class="r down">-0.00</td><td class="r down">-0.02%</td></tr></tbody></table></div></div><div><h3>FX (G7)</h3><div class="scroll"><table><thead><tr><th>Symbol</th><th class="r">Last</th><th class="r">Chg</th><th class="r">%</th></tr></thead><tbody><tr><td>EURUSD</td><td class="r">1.1365</td><td class="r down">-0.0007</td><td class="r down">-0.06%</td></tr><tr><td>GBPUSD</td><td class="r">1.3244</td><td class="r down">-0.0011</td><td class="r down">-0.08%</td></tr><tr><td>USDJPY</td><td class="r">157.2910</td><td class="r down">-0.0870</td><td class="r down">-0.06%</td></tr><tr><td>USDCAD</td><td class="r">1.4184</td><td class="r up">+0.0009</td><td class="r up">+0.06%</td></tr></tbody></table></div></div><div><h3>CRYPTO</h3><div class="scroll"><table><thead><tr><th>Symbol</th><th class="r">Last</th><th class="r">Chg</th><th class="r">%</th></tr></thead><tbody><tr><td>BTC</td><td class="r">83,720.96</td><td class="r up">+264.22</td><td class="r up">+0.32%</td></tr><tr><td>ETH</td><td class="r">2,688.06</td><td class="r up">+0.65</td><td class="r up">+0.02%</td></tr><tr><td>SOL</td><td class="r">119.00</td><td class="r up">+0.19</td><td class="r up">+0.16%</td></tr><tr><td>XRP</td><td class="r">1.5000</td><td class="r up">+0.0039</td><td class="r up">+0.26%</td></tr></tbody></table></div></div></div><p class="meta">Note: wires quoted Brent above 107 early Mon; TV BRN1! shows 99.68 - likely a different contract month, levels not comparable.</p></section><section id="trump"><h2>TRUMP (last 24h)</h2><ul class="lines"><li>Stood by rejection of Iran&#x27;s 7-day truce / Hormuz reopening offer: &quot;not the deal that I want&quot; - war premium stays in oil, inflation and hike bets (Al Jazeera / Euronews, 28 Sep).</li><li>Nothing else market-moving found in the last 24h.</li></ul></section><section id="today-s-catalysts"><h2>TODAY&#x27;S CATALYSTS</h2><ul class="lines"><li>21:00 HKT  US FHFA House Price Index (Jul)</li><li>22:00 HKT  US JOLTS Job Openings (Aug) - exp 7.225M, prev 7.271M <span class="hi">(!)</span></li><li>22:00 HKT  US Conf Board Consumer Confidence (Sep) - exp 90.0, prev 89.4 <span class="hi">(!)</span></li><li>Various    Fed speakers through the US session - hike-risk read <span class="hi">(!)</span></li><li>09:30 HKT  (Wed) China official Sep PMIs</li></ul></section><section id="headlines"><h2>HEADLINES</h2><ul class="lines"><li>Oil jumps after Trump rejects Iran truce offer; war enters 8th month, Hormuz still shut (Euronews / Al Jazeera)</li><li>UST 10Y hit 5.27%, a 19-year high, 30Y 5.55% on oil-driven hike bets (Bloomberg)</li><li>Asian bonds set to track Treasuries lower; Kospi reopens lower after two-day holiday (Bloomberg / CNBC)</li><li>Hang Seng extends slide on tech selling in holiday-thin trade (BBN Times)</li><li>Administration broad pressure on Fed (Warsh) not to hike, some urging cuts (CNBC)</li></ul></section><section id="fvg"><h2>FVG (unfilled, nearest to price)</h2><pre>[via TradingView]
+FVG - unfilled, nearest to price   (supp = support below, res = resistance above)
+
+INDICES
+  ES  7,728.25
+    D   supp 7,541.00-7,629.00 (Aug 04)
+        res  7,783.50-7,810.50 (Sep 24)
+    1H  supp 7,695.00-7,704.25 (Sep 18)
+        res  7,739.50-7,745.25 (Sep 28)
+  NQ  30,429.00
+    D   supp 29,793.25-29,904.00 (Sep 21)
+        res  30,616.00-30,679.00 (Sep 29)
+    1H  supp 30,275.00-30,397.00 (Sep 21)
+        res  30,529.25-30,568.00 (Sep 28)
+  YM  51,746.00
+    D   supp 51,017.00-51,743.00 (Jun 15)
+        res  52,676.00-52,758.00 (Sep 10)
+    1H  supp 51,595.00-51,630.00 (Sep 24)
+        res  51,807.00-51,824.00 (Sep 28)
+  HSI  24,444.00
+    D   supp 23,808.00-23,883.00 (Jul 08)
+        res  24,763.00-24,802.00 (Sep 24)
+    1H  supp 24,424.00-24,426.00 (Sep 25)
+        res  24,578.00-24,659.00 (Sep 29)
+  NK  65,180.00
+    D   supp 63,865.00-64,025.00 (Sep 17)
+        res  66,890.00-67,390.00 (Aug 19)
+    1H  supp 64,630.00-65,020.00 (Sep 18)
+        res  65,510.00-65,530.00 (Sep 29)
+  KOSPI200  1,083.55
+    D   supp 1,075.40-1,075.50 (Sep 18)
+        res  1,100.05-1,110.20 (Sep 28)
+    1H  supp 1,079.65-1,080.40 (Sep 29)
+        res  1,083.70-1,084.20 (Sep 29)
+
+COMMODITIES
+  GC  4,170.80
+    D   supp 3,916.80-3,963.40 (Oct 07 2025)
+        res  4,176.20-4,289.20 (Sep 29)
+    1H  supp -
+        res  4,191.20-4,194.30 (Sep 28)
+  SI  61.07
+    D   supp 58.88-59.62 (Aug 05)
+        res  61.24-63.78 (Sep 29)
+    1H  supp -
+        res  61.26-61.49 (Sep 28)
+  CL  94.11
+    D   supp 86.79-88.97 (Sep 02)
+        res  97.22-99.10 (Sep 21)
+    1H  supp 91.57-91.93 (Sep 24)
+        res  96.17-96.80 (Sep 18)
+  BZ  99.68
+    D   supp 96.57-96.78 (Sep 08)
+        res  -
+    1H  supp 99.49-99.55 (Sep 29)
+        res  103.60-103.63 (Sep 21)
+
+RATES (UST, yield %)
+  2Y  4.93
+    D   supp 4.91-4.92 (Sep 29)
+        res  -
+    1H  supp 4.87-4.89 (Sep 27)
+        res  4.94-4.95 (Sep 29)
+  5Y  5.07
+    D   supp 4.86-4.96 (Sep 24)
+        res  -
+    1H  supp 5.00-5.03 (Sep 27)
+        res  5.08-5.09 (Sep 29)
+  10Y  5.23
+    D   supp 5.13-5.15 (Sep 25)
+        res  -
+    1H  supp 5.17-5.20 (Sep 27)
+        res  5.24-5.25 (Sep 29)
+  30Y  5.55
+    D   supp 5.53-5.54 (Sep 29)
+        res  -
+    1H  supp 5.53-5.53 (Sep 28)
+        res  5.56-5.57 (Sep 29)
+
+FX (G7)
+  EURUSD  1.1365
+    D   supp -
+        res  1.1399-1.1429 (Sep 24)
+    1H  supp -
+        res  1.1370-1.1370 (Sep 28)
+  GBPUSD  1.3244
+    D   supp 1.3118-1.3124 (Nov 26 2025)
+        res  1.3256-1.3322 (Sep 24)
+    1H  supp 1.3230-1.3233 (Sep 27)
+        res  1.3252-1.3253 (Sep 28)
+  USDJPY  157.2910
+    D   supp 156.3140-156.5750 (Sep 21)
+        res  158.9680-159.6340 (Sep 03)
+    1H  supp 156.3200-156.5520 (Sep 17)
+        res  157.3560-157.3960 (Sep 29)
+  USDCAD  1.4184
+    D   supp 1.4155-1.4171 (Sep 29)
+        res  -
+    1H  supp 1.4178-1.4182 (Sep 29)
+        res  -
+
+CRYPTO
+  BTC  83,720.96
+    D   supp 77,105.42-80,822.48 (Sep 19)
+        res  83,743.65-84,113.56 (Sep 29)
+    1H  supp 81,711.00-83,667.04 (Sep 21)
+        res  83,779.48-84,115.01 (Sep 28)
+  ETH  2,688.06
+    D   supp 2,481.48-2,601.84 (Sep 19)
+        res  2,706.26-2,715.02 (Sep 24)
+    1H  supp 2,672.11-2,674.83 (Sep 29)
+        res  2,750.18-2,751.48 (Sep 23)
+  SOL  119.00
+    D   supp 111.43-115.54 (Sep 22)
+        res  119.07-120.09 (Sep 29)
+    1H  supp 118.09-118.17 (Sep 29)
+        res  119.02-119.31 (Sep 28)
+  XRP  1.5000
+    D   supp 1.4174-1.4929 (Sep 22)
+        res  1.5030-1.5032 (Sep 29)
+    1H  supp 1.4917-1.4932 (Sep 29)
+        res  1.5372-1.5444 (Sep 26)</pre></section><footer>Analytical only - probabilities and data, not advice. You place every trade.  Item 20260929-1409-brief.</footer></div></body></html>
